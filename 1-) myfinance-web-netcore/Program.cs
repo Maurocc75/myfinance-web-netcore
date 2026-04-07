@@ -1,7 +1,18 @@
+using myfinance_web_netcore_infra;
+using myfinance_web_netcore_service.Interfaces;
+using Microsoft.EntityFrameworkCore;
+using myfinance_web_netcore_service;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<MyFinanceDbContext>();
+builder.Services.AddScoped<IPlanoContaService, PlanoContaService>();
+builder.Services.AddScoped<ITransacaoService, TransacaoService>();
+
+
 
 var app = builder.Build();
 
@@ -22,7 +33,7 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
+    pattern: "{controller=Home}/{action=Index}/{Id?}")
     .WithStaticAssets();
 
 

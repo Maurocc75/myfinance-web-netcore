@@ -2,7 +2,21 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myfinance-web-netcore", "myfinance-web-netcore\myfinance-web-netcore.csproj", "{81668B93-80F4-43A0-E363-C9F54D17AE93}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1-) myfinance-web-netcore", "1-) myfinance-web-netcore", "{C2EBB496-9BC3-F0EC-D88D-BAF5B76DC65D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2-) myfinance-web-netcore-service", "2-) myfinance-web-netcore-service", "{7AD649AD-27C2-E66A-65F3-2173844D92C4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3-) myfinance-web-netcore-domain", "3-) myfinance-web-netcore-domain", "{20A23007-545C-94EE-E93B-DDEF2C984225}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4-) myfinance-web-netcore-infra", "4-) myfinance-web-netcore-infra", "{4E0D49A6-4018-B551-3402-72C890DE6B61}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myfinance-web-netcore", "1-) myfinance-web-netcore\myfinance-web-netcore.csproj", "{2195B8C0-BC5F-52FF-FF06-A42AC8AE2DEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myfinance-web-netcore-service", "2-) myfinance-web-netcore-service\myfinance-web-netcore-service.csproj", "{914A54B8-7934-99EF-0A25-59F143C8E3DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myfinance-web-netcore-domain", "3-) myfinance-web-netcore-domain\myfinance-web-netcore-domain.csproj", "{87C1AC4D-B856-70F8-E557-C46598662FDE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "myfinance-web-netcore-infra", "4-) myfinance-web-netcore-infra\myfinance-web-netcore-infra.csproj", "{81A68147-2221-EC5B-0FEF-11CFC1586ADC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -10,15 +24,33 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{81668B93-80F4-43A0-E363-C9F54D17AE93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{81668B93-80F4-43A0-E363-C9F54D17AE93}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{81668B93-80F4-43A0-E363-C9F54D17AE93}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{81668B93-80F4-43A0-E363-C9F54D17AE93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2195B8C0-BC5F-52FF-FF06-A42AC8AE2DEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2195B8C0-BC5F-52FF-FF06-A42AC8AE2DEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2195B8C0-BC5F-52FF-FF06-A42AC8AE2DEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2195B8C0-BC5F-52FF-FF06-A42AC8AE2DEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{914A54B8-7934-99EF-0A25-59F143C8E3DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{914A54B8-7934-99EF-0A25-59F143C8E3DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{914A54B8-7934-99EF-0A25-59F143C8E3DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{914A54B8-7934-99EF-0A25-59F143C8E3DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87C1AC4D-B856-70F8-E557-C46598662FDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87C1AC4D-B856-70F8-E557-C46598662FDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87C1AC4D-B856-70F8-E557-C46598662FDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87C1AC4D-B856-70F8-E557-C46598662FDE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81A68147-2221-EC5B-0FEF-11CFC1586ADC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81A68147-2221-EC5B-0FEF-11CFC1586ADC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81A68147-2221-EC5B-0FEF-11CFC1586ADC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81A68147-2221-EC5B-0FEF-11CFC1586ADC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2195B8C0-BC5F-52FF-FF06-A42AC8AE2DEC} = {C2EBB496-9BC3-F0EC-D88D-BAF5B76DC65D}
+		{914A54B8-7934-99EF-0A25-59F143C8E3DB} = {7AD649AD-27C2-E66A-65F3-2173844D92C4}
+		{87C1AC4D-B856-70F8-E557-C46598662FDE} = {20A23007-545C-94EE-E93B-DDEF2C984225}
+		{81A68147-2221-EC5B-0FEF-11CFC1586ADC} = {4E0D49A6-4018-B551-3402-72C890DE6B61}
+	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D515D412-5E9E-4C33-9B5A-A298C1077DFE}
+		SolutionGuid = {AE6C9DB1-98F9-4973-866A-6BE716A2151A}
 	EndGlobalSection
 EndGlobal

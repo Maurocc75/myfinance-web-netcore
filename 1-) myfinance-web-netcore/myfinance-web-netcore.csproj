@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>myfinance_web_netcore</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+     <ProjectReference Include="..\2-) myfinance-web-netcore-service/myfinance-web-netcore-service.csproj" />
+      <ProjectReference Include="..\3-) myfinance-web-netcore-domain/myfinance-web-netcore-domain.csproj" />
+       <ProjectReference Include="..\4-) myfinance-web-netcore-infra/myfinance-web-netcore-infra.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.9" />
+  </ItemGroup>
+
+</Project>
